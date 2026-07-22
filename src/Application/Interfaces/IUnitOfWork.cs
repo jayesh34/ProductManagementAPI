@@ -1,6 +1,6 @@
-using Infrastructure.Data.Repositories;
 
-namespace Infrastructure.Data;
+using Domain.Entities;
+namespace Application.Interfaces;
 
 public interface IUnitOfWork
 {

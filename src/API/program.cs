@@ -1,6 +1,9 @@
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data.Repositories;
+using Application.Interfaces;
+using Application.Services;
+using Application.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddAutoMapper(typeof(ProductMappingProfile));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IProductService, ProductService>();
+
+
 // Learn more about configuring Swagger/OpenAPI.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
