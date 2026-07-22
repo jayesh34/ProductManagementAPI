@@ -97,3 +97,4 @@ G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\refint\Infra
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.pdb
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.genruntimeconfig.cache
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\ref\Infrastructure.Tests.dll
+G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.sourcelink.json
