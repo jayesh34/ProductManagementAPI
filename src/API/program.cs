@@ -4,11 +4,18 @@ using Infrastructure.Data.Repositories;
 using Application.Interfaces;
 using Application.Services;
 using Application.Mapping;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Application.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddFluentValidationAutoValidation();
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidator>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
