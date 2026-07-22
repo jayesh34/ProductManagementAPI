@@ -149,3 +149,6 @@ G:\ProductManagementAPI\src\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.
 G:\ProductManagementAPI\src\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 G:\ProductManagementAPI\src\API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 G:\ProductManagementAPI\src\API\obj\Debug\net8.0\API.sourcelink.json
+G:\ProductManagementAPI\src\API\bin\Debug\net8.0\AutoMapper.dll
+G:\ProductManagementAPI\src\API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+G:\ProductManagementAPI\src\API\bin\Debug\net8.0\FluentValidation.dll
