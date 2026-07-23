@@ -91,10 +91,10 @@ G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tes
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tests.AssemblyInfoInputs.cache
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tests.AssemblyInfo.cs
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tests.csproj.CoreCompileInputs.cache
+G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tests.sourcelink.json
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Applicat.7AAE1402.Up2Date
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tests.dll
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\refint\Application.Tests.dll
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tests.pdb
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tests.genruntimeconfig.cache
 G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\ref\Application.Tests.dll
-G:\ProductManagementAPI\tests\Application.Tests\obj\Debug\net8.0\Application.Tests.sourcelink.json

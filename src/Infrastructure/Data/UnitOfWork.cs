@@ -1,5 +1,6 @@
 using Infrastructure.Data.Repositories;
 using Application.Interfaces;
+
 namespace Infrastructure.Data;
 
 public class UnitOfWork : IUnitOfWork
@@ -8,10 +9,15 @@ public class UnitOfWork : IUnitOfWork
 
     public IProductRepository Products { get; }
 
+    public IUserRepository Users { get; }
+
     public UnitOfWork(ApplicationDbContext context)
     {
         _context = context;
+
         Products = new ProductRepository(context);
+
+        Users = new UserRepository(context);
     }
 
     public async Task<int> SaveChangesAsync()

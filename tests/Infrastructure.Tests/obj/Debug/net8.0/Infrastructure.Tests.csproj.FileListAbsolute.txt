@@ -91,10 +91,10 @@ G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructu
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.AssemblyInfoInputs.cache
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.AssemblyInfo.cs
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.csproj.CoreCompileInputs.cache
+G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.sourcelink.json
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastr.450EAD72.Up2Date
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.dll
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\refint\Infrastructure.Tests.dll
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.pdb
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.genruntimeconfig.cache
 G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\ref\Infrastructure.Tests.dll
-G:\ProductManagementAPI\tests\Infrastructure.Tests\obj\Debug\net8.0\Infrastructure.Tests.sourcelink.json

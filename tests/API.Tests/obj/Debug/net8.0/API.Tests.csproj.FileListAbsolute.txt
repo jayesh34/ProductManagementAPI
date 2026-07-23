@@ -91,10 +91,10 @@ G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.GeneratedMSBu
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.AssemblyInfoInputs.cache
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.AssemblyInfo.cs
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.csproj.CoreCompileInputs.cache
+G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.sourcelink.json
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.csproj.Up2Date
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.dll
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\refint\API.Tests.dll
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.pdb
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.genruntimeconfig.cache
 G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\ref\API.Tests.dll
-G:\ProductManagementAPI\tests\API.Tests\obj\Debug\net8.0\API.Tests.sourcelink.json

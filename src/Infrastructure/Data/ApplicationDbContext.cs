@@ -10,6 +10,9 @@ public class ApplicationDbContext : DbContext
     {
     }
 
+    public DbSet<User> Users => Set<User>();
+
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
     public DbSet<Product> Products => Set<Product>();
 
     public DbSet<Item> Items => Set<Item>();
@@ -23,5 +26,11 @@ public class ApplicationDbContext : DbContext
             .WithOne(i => i.Product)
             .HasForeignKey(i => i.ProductId)
             .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<User>()
+    .HasMany(u => u.RefreshTokens)
+    .WithOne(r => r.User)
+    .HasForeignKey(r => r.UserId)
+    .OnDelete(DeleteBehavior.Cascade);
     }
 }
