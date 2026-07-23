@@ -1,10 +1,12 @@
 using Application.DTOs;
 using Application.Interfaces;
+using Asp.Versioning;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
 [ApiController]
+[ApiVersion("1.0")]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {

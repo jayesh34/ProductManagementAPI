@@ -178,3 +178,6 @@ G:\ProductManagementAPI\src\API\bin\Debug\net8.0\System.IO.Pipelines.dll
 G:\ProductManagementAPI\src\API\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 G:\ProductManagementAPI\src\API\bin\Debug\net8.0\System.Text.Json.dll
 G:\ProductManagementAPI\src\API\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+G:\ProductManagementAPI\src\API\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+G:\ProductManagementAPI\src\API\bin\Debug\net8.0\Asp.Versioning.Http.dll
+G:\ProductManagementAPI\src\API\bin\Debug\net8.0\Asp.Versioning.Mvc.dll

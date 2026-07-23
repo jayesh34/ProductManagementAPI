@@ -13,6 +13,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using Asp.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,14 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 
 builder.Services.AddControllers();
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ReportApiVersions = true;
+    options.ApiVersionReader = new UrlSegmentApiVersionReader();
+});
+
 builder.Services.AddFluentValidationAutoValidation();
 
 builder.Services.AddValidatorsFromAssemblyContaining<CreateProductDtoValidator>();
@@ -121,7 +130,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-
 app.Run();
-
-
+public partial class Program
+{
+}
