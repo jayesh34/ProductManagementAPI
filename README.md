@@ -1,8 +1,6 @@
 # Product Management API
 
-## Overview
-
-This project is a RESTful Backend API built using .NET 8 and ASP.NET Core Web API for managing Products and Items. It follows Clean Architecture principles with separate Domain, Application, Infrastructure, and API layers.
+A RESTful Product Management API built using ASP.NET Core 8 following Clean Architecture principles.
 
 ## Tech Stack
 
@@ -11,127 +9,121 @@ This project is a RESTful Backend API built using .NET 8 and ASP.NET Core Web AP
 - Entity Framework Core
 - SQL Server
 - JWT Authentication
-- Refresh Token
 - FluentValidation
 - AutoMapper
-- Swagger
 - Serilog
-- xUnit
-- Moq
-- WebApplicationFactory
+- Swagger / OpenAPI
+- xUnit & Moq
 - Docker
-
----
-
-## Architecture
-
-```
-API
-    ↓
-Application
-    ↓
-Infrastructure
-    ↓
-SQL Server
-
-Domain
-```
 
 ---
 
 ## Project Structure
 
 ```
-src
- ├── API
- ├── Application
- ├── Domain
- └── Infrastructure
-
-tests
- ├── API.Tests
- ├── Application.Tests
- └── Infrastructure.Tests
+ProductManagementAPI
+│
+├── src
+│   ├── API
+│   ├── Application
+│   ├── Domain
+│   └── Infrastructure
+│
+├── tests
+│   ├── API.Tests
+│   ├── Application.Tests
+│   └── Infrastructure.Tests
+│
+├── docker-compose.yml
+├── README.md
+└── ProductManagementAPI.sln
 ```
 
 ---
 
-## Database Setup
+## Features
 
-Update the connection string in:
-
-```
-src/API/appsettings.json
-```
-
-Run migrations:
-
-```bash
-dotnet ef database update --project src/Infrastructure --startup-project src/API
-```
+- Product CRUD Operations
+- JWT Authentication
+- Refresh Token Support
+- Repository Pattern
+- Unit of Work Pattern
+- FluentValidation
+- Global Exception Middleware
+- API Versioning
+- Swagger Documentation
+- Serilog Logging
+- Unit & Integration Tests
+- Docker Support
 
 ---
 
-## Running the Project
+## Prerequisites
+
+- .NET 8 SDK
+- SQL Server
+- Visual Studio Code or Visual Studio 2022
+
+---
+
+## Setup
+
+Clone the repository
 
 ```bash
-dotnet restore
-dotnet build
+git clone <repository-url>
+```
+
+Go to API project
+
+```bash
 cd src/API
+```
+Update the connection string in
+```
+appsettings.json
+```
+Apply migrations
+
+```bash
+dotnet ef database update
+```
+Run the application
+
+```bash
 dotnet run
 ```
-
-Swagger:
-
-```
-http://localhost:5232/swagger
-```
-
 ---
 
 ## Authentication
 
-Login API returns:
-
-- Access Token
-- Refresh Token
-
-Use the Access Token as:
-
-```
-Authorization: Bearer <token>
-```
-
----
-
-## API Endpoints
-
-### Authentication
+Login Endpoint
 
 ```
 POST /api/Auth/login
 ```
-
-### Products
+After successful login, use the returned Access Token in Swagger.
+Authorization Header
 
 ```
-GET     /api/v1/Products
-GET     /api/v1/Products/{id}
-POST    /api/v1/Products
-PUT     /api/v1/Products/{id}
-DELETE  /api/v1/Products/{id}
+Bearer {your_access_token}
 ```
+---
+## API Documentation
 
+Swagger is available at
+
+```
+http://localhost:5232/swagger
+```
 ---
 
-## Running Tests
+## Run Tests
 
 ```bash
 dotnet test
 ```
-
 ---
-
 ## Docker
 
 Build
@@ -139,23 +131,12 @@ Build
 ```bash
 docker compose build
 ```
-
 Run
 
 ```bash
 docker compose up
 ```
 ---
-## Features
-- Product CRUD
-- JWT Authentication
-- Refresh Token
-- Repository Pattern
-- Unit of Work
-- FluentValidation
-- Global Exception Middleware
-- API Versioning
-- Swagger Documentation
-- Serilog Logging
-- Unit Testing
-- Integration Testing
+
+## Author
+Jayesh Ishi
