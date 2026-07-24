@@ -17,7 +17,6 @@ using Asp.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
 builder.Services.AddApiVersioning(options =>
 {
@@ -26,6 +25,7 @@ builder.Services.AddApiVersioning(options =>
     options.ReportApiVersions = true;
     options.ApiVersionReader = new UrlSegmentApiVersionReader();
 });
+
 
 builder.Services.AddFluentValidationAutoValidation();
 
@@ -41,8 +41,6 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-
-
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
